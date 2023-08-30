@@ -6,10 +6,11 @@ A GitHub action to build an RPM.
 
 ### `distribution`
 
-The distribution to run on. Currently supported:
+The distribution to run on. Currently supported: (selection not working)
 
+- [`rockylinux-8`](https://github.com/robertdebock/docker-github-action-rpmbuild/tree/rockylinux-8) (default)
 - [`centos-7`](https://github.com/robertdebock/docker-github-action-rpmbuild/tree/centos-7)
-- [`centos-8`](https://github.com/robertdebock/docker-github-action-rpmbuild/tree/master) (default)
+- [`centos-8`](https://github.com/robertdebock/docker-github-action-rpmbuild/tree/centos-8) (defunct)
 - [`fedora-31`](https://github.com/robertdebock/docker-github-action-rpmbuild/tree/fedora-31)
 
 ## Requirements
