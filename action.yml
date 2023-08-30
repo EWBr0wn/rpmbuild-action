@@ -10,8 +10,14 @@ inputs:
     default: rockylinux-8
 
 runs:
-  using: docker
-  image: "docker://robertdebock/github-action-rpmbuild:rockylinux-8"
+  using: "composite"
+  steps:
+    - name: Message
+      if: ${{ inputs.distribution != 'rocky'}}
+      run: echo "Test: not rocky"
+
+    - name: Rocky
+      uses: "docker://robertdebock/github-action-rpmbuild:rockylinux-8"
 
 branding:
   icon: box
